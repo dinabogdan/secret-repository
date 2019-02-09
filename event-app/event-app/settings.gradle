@@ -1,0 +1,6 @@
+rootProject.name = 'event-app'
+
+include 'app'
+include 'identity-manager'
+include 'customer-api'
+
