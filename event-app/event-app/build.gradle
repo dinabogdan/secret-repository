@@ -56,7 +56,9 @@ project(':identity-manager') {
         implementation 'org.springframework.boot:spring-boot-starter-security'
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-undertow'
+        implementation 'org.zalando:problem-spring-web'
         runtimeOnly 'com.h2database:h2'
+        compileOnly 'org.projectlombok:lombok:1.18.4'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testImplementation 'org.springframework.security:spring-security-test'
     }
