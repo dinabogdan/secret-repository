@@ -1,6 +1,6 @@
 package com.freesoft.identity.manager.service;
 
-import com.freesoft.identity.manager.service.dto.UserAccountDTO;
+import com.freesoft.identity.manager.web.rest.dto.UserAccountDTO;
 
 public interface KeycloakClient {
 

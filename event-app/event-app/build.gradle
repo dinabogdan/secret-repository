@@ -50,15 +50,16 @@ project(':identity-manager') {
     }
 
     dependencies {
-        compile project(':customer-api')
-
         implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
         implementation 'org.springframework.boot:spring-boot-starter-security'
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-undertow'
-        implementation 'org.zalando:problem-spring-web'
+        implementation 'org.zalando:problem-spring-web:0.24.0-RC.0'
+        implementation 'commons-beanutils:commons-beanutils:1.9.3'
+
         runtimeOnly 'com.h2database:h2'
         compileOnly 'org.projectlombok:lombok:1.18.4'
+        
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testImplementation 'org.springframework.security:spring-security-test'
     }
